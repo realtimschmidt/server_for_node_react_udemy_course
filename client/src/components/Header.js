@@ -6,7 +6,7 @@ class Header extends Component {
       <nav>
         <div className="nav-wrapper">
           <a className="left brand-logo">
-            Cool Survey App
+            Super Cool Surveys
           </a>
           <ul className="right">
             <li>Login With Google</li>
