@@ -5,6 +5,7 @@ const passport = require('passport')
 const keys = require('./config/keys')
 const authRoutes = require('./routes/authRoutes')
 const billingRoutes = require('./routes/billingRoutes')
+const surveyRoutes = require('./routes/surveyRoutes')
 const bodyParser = require('body-parser')
 const path = require('path')
 require('./models/User')
@@ -28,6 +29,7 @@ app.use(passport.session())
 
 authRoutes(app)
 billingRoutes(app)
+surveyRoutes(app)
 
 if (process.env.NODE_ENV === 'production') {
   // Express will serve production asses
